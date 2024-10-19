@@ -28,3 +28,6 @@ empty mock filr for code will ont clash
 after that please check coverage folder to get amazed 
 
 add testId to e.g (TouchableOpacity) for reference in the test file
+
+
+in case object equality we have to use toEqual
