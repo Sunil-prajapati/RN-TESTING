@@ -1,5 +1,6 @@
 All about testing 
 
+  to build debug app 
 commands==== 
 npm test
 to override snapshot ===
@@ -31,3 +32,17 @@ add testId to e.g (TouchableOpacity) for reference in the test file
 
 
 in case object equality we have to use toEqual
+
+
+===== Detox for E2E testing ======
+npx detox init
+=== Android config =====
+after this need native configuration 
+we have to update the name od emulator/simulator in .detoxs.js file
+make sure there is no space while pasting in the network_security_config file
+
+npx detox build --configuration android.emu.debug
+OR
+cd android && ./gradlew app:assembleDebug app:assembleAndroidTest
+
+artifacts folder created for the screenshot 
